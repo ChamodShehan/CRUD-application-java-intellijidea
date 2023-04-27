@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ToDoForm">
+   <children>
+      <Label fx:id="lblWelcomeNote" layoutX="286.0" layoutY="14.0" text="Label" />
+      <Label fx:id="lblId" layoutX="543.0" layoutY="14.0" text="Label" />
+      <TextField fx:id="txtselectedtxt" layoutX="345.0" layoutY="47.0" prefHeight="32.0" prefWidth="226.0" />
+      <Button fx:id="btnupdate" layoutX="488.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnupdateOnAction" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #0fb509;" text="Update" textFill="WHITE" />
+      <Button fx:id="btnDelete" layoutX="396.0" layoutY="96.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #e10000;" text="Delete" textFill="WHITE" />
+      <Button layoutX="335.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnAddNewTodo" prefHeight="32.0" prefWidth="153.0" style="-fx-background-color: #0019b9;" text="Add New Todo" textFill="WHITE" />
+      <Pane fx:id="subRoot" layoutX="314.0" layoutY="221.0" prefHeight="114.0" prefWidth="262.0">
+         <children>
+            <TextField fx:id="txtNewTodo" layoutX="23.0" layoutY="23.0" prefHeight="25.0" prefWidth="226.0" />
+            <Button layoutX="123.0" layoutY="65.0" mnemonicParsing="false" onAction="#btnAddTodoListOnAction" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #00a10b;" text="Add Todo" textFill="#eeeeee" />
+         </children>
+      </Pane>
+      <Button layoutX="335.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #00a10b;" text="&lt;&lt; Logout" textFill="WHITE" />
+      <ListView fx:id="listTodolist" layoutX="23.0" layoutY="47.0" prefHeight="334.0" prefWidth="248.0" />
+   </children>
+</AnchorPane>
